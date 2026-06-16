@@ -759,51 +759,61 @@ textarea { min-height: 120px; resize: vertical; }
   }
 }
 
-
-/* Practical no-photo fallback: real JPG/PNG photos have not been uploaded yet. */
+/* Image-led upgrade based on supplied restaurant photography themes */
 .restaurant-hero {
   background:
-    linear-gradient(92deg, rgba(23, 21, 20, 0.96), rgba(23, 21, 20, 0.68) 50%, rgba(23, 21, 20, 0.26)),
-    radial-gradient(circle at 22% 20%, rgba(176, 18, 10, 0.5), transparent 18%),
-    radial-gradient(circle at 82% 18%, rgba(246, 179, 84, 0.75), transparent 20%),
-    radial-gradient(circle at 80% 78%, rgba(45, 111, 105, 0.72), transparent 24%),
-    repeating-linear-gradient(135deg, rgba(255, 250, 242, 0.09) 0 2px, transparent 2px 42px),
-    linear-gradient(135deg, #171514, #521c16 46%, #2d6f69 100%);
+    linear-gradient(92deg, rgba(23, 21, 20, 0.96), rgba(23, 21, 20, 0.66) 48%, rgba(23, 21, 20, 0.24)),
+    url("../assets/photos/tacos-drinks.svg") center/cover no-repeat;
 }
+
+.menu-showcase-card,
+.drink-card,
+.photo-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.menu-showcase-card > img,
+.drink-card > img,
+.photo-card > img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease, filter 420ms ease;
+}
+
+.menu-showcase-card::after,
+.drink-card::after,
+.photo-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background: linear-gradient(180deg, rgba(23, 21, 20, 0.12), rgba(23, 21, 20, 0.86));
+}
+
+.menu-showcase-card:hover > img,
+.drink-card:hover > img,
+.photo-card:hover > img {
+  transform: scale(1.06);
+  filter: saturate(1.15) contrast(1.04);
+}
+
+.photo-card::before { display: none; }
+.photo-card figcaption { z-index: 1; }
 
 .order-image {
   background:
     linear-gradient(transparent, rgba(23, 21, 20, 0.9)),
-    radial-gradient(circle at 34% 24%, #f6b354 0 10%, transparent 11%),
-    radial-gradient(circle at 70% 28%, #b0120a 0 14%, transparent 15%),
-    linear-gradient(135deg, #4a1d16, #171514);
+    url("../assets/photos/fried-chicken-burger.svg") center/cover no-repeat;
 }
 
 .reserve-image {
   background:
     linear-gradient(transparent, rgba(23, 21, 20, 0.9)),
-    radial-gradient(circle at 70% 26%, rgba(216, 197, 142, 0.8), transparent 23%),
-    linear-gradient(135deg, #171514, #2d6f69);
-}
-
-/* Optional real photo enhancement classes populated by src/main.js when JPG/PNG files exist. */
-.has-photo {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-}
-
-.has-photo::after {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  content: "";
-  background: linear-gradient(180deg, rgba(23, 21, 20, 0.14), rgba(23, 21, 20, 0.88));
-}
-
-.restaurant-hero.has-photo::after {
-  z-index: 0;
-  background: linear-gradient(92deg, rgba(23, 21, 20, 0.92), rgba(23, 21, 20, 0.58) 52%, rgba(23, 21, 20, 0.22));
+    url("../assets/photos/venue-bear.svg") center/cover no-repeat;
 }

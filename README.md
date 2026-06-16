@@ -15,7 +15,7 @@ A premium, mobile-friendly GitHub Pages website for **California Republic St Ive
 - Square Online ordering links open in a new tab
 - Now Book It reservation links open in a new tab
 - Menu-led premium restaurant design with warm California red, charcoal, warm white and beige accents
-- Real JPG/PNG photos are not uploaded to the repository yet; `assets/photos/README.md` lists the filenames the website will auto-use when photos are added
+- Image-led gallery and feature cards based on the supplied food, drink and venue photography themes
 - Mobile-first layouts suitable for iPhone preview
 
 ## Preview locally
