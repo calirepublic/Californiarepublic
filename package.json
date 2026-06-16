@@ -1,0 +1,11 @@
+{
+  "name": "california-republic-restaurant-site",
+  "version": "1.0.0",
+  "description": "Modern restaurant website for California Republic with menu, reservations, online ordering, inquiries, app promotion, and gift cards.",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "preview": "python3 -m http.server 4173",
+    "check": "node --check src/main.js"
+  }
+}
