@@ -1,16 +1,22 @@
 # California Republic
 
-A simple, mobile-friendly static website foundation for **California Republic St Ives**, matching the clean white/red direction of the current live website.
+A premium, mobile-friendly GitHub Pages website for **California Republic St Ives** using only HTML, CSS and JavaScript.
 
-## Current foundation
+## Website pages
 
-- Header/logo area inspired by the live California Republic website
-- Navigation: Home, About Us, What’s On, Reservations, Menus, Gift Cards
-- Clean white background with California Republic red accents
-- Basic homepage sections only: Menus, About Us, What’s On, Menus links and Contact footer
-- Working reservation link to Now Book It
-- Working takeaway/order link to Square Online
-- GitHub Pages deployment workflow kept unchanged
+- `index.html` — Homepage with hero, Order Online, Reserve, Taco Tuesday, Wednesday Burger Night, Happy Hour, Featured Menu, Kids & Family, Gallery and Contact
+- `food-menu.html` — Full Food Menu page covering tacos, burgers, grill, Mexican favourites and kids menu
+- `drinks-menu.html` — Full Drinks Menu page covering margaritas, cocktails and mocktails
+
+## Key features
+
+- Official California Republic logo in the header, hero, footer and favicon
+- Navigation links for Home, Food Menu, Drinks Menu, Order Online, Reserve, Specials, Kids and Contact
+- Square Online ordering links open in a new tab
+- Now Book It reservation links open in a new tab
+- Menu-led premium restaurant design with warm California red, charcoal, warm white and beige accents
+- Image-led gallery and feature cards based on the supplied food, drink and venue photography themes
+- Mobile-first layouts suitable for iPhone preview
 
 ## Preview locally
 
@@ -45,5 +51,4 @@ You can also run the workflow manually from the GitHub Actions tab using `workfl
 
 ```bash
 npm run check
-npm run validate:links
 ```
