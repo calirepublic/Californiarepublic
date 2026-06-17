@@ -3,104 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="California Republic St Ives — Mexican flavours, American grill, takeaway, reservations, menus and gift cards." />
-    <title>California Republic St Ives</title>
+    <meta
+      name="description"
+      content="California Republic St Ives homepage for online ordering, reservations, happy hour, Taco Tuesday, Burger Night, kids menu, gallery, and contact."
+    />
+    <title>California Republic St Ives | Mexican, Burgers & Margaritas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <header class="site-header" id="home">
-      <a class="brand" href="./index.html#home" aria-label="California Republic home">
-        <img src="./assets/california-republic-logo.svg" alt="California Republic" />
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
-        <a href="./index.html#home">Home</a>
-        <a href="./index.html#about">About Us</a>
-        <a href="./index.html#whats-on">What's On</a>
-        <a href="https://bookings.nowbookit.com/?accountid=b398aed7-99eb-44ce-8aa6-cd6c6837fcff&amp;venueid=14285&amp;theme=light&amp;colors=hex,b0120a" target="_blank" rel="noopener noreferrer">Reservations</a>
-        <a href="./food-menu.html">Menus</a>
-        <a href="https://app.squareup.com/gift/ML96W6NYDQ01E/order" target="_blank" rel="noopener noreferrer">Gift Cards</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="California Republic homepage">
+          <span class="brand-mark">CR</span>
+          <span class="brand-text">California Republic</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span>Menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#order">Order</a>
+          <a href="#reservations">Reserve</a>
+          <a href="#specials">Specials</a>
+          <a href="#kids">Kids</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section class="hero-panel" aria-labelledby="home-title">
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
         <div class="hero-copy">
-          <p class="eyebrow">California Republic St Ives</p>
-          <h1 id="home-title">Tacos, Burgers, Ribs & Good Times</h1>
-          <p>Mexican flavours, American grill, cocktails, mocktails and family dining in St Ives.</p>
+          <p class="eyebrow">St Ives · Mexican flavours · American grill · margaritas</p>
+          <h1 id="hero-title">Tacos, burgers, ribs & cocktails with California attitude.</h1>
+          <p>
+            Welcome to California Republic — the neighbourhood restaurant and bar for family dinners,
+            quick takeaway, after-work drinks, weekend bookings, and weekly food specials.
+          </p>
           <div class="hero-actions">
-            <a class="button button-red" href="https://californiarepublic-stives.square.site/" target="_blank" rel="noopener noreferrer">Order Online</a>
-            <a class="button button-outline" href="https://bookings.nowbookit.com/?accountid=b398aed7-99eb-44ce-8aa6-cd6c6837fcff&amp;venueid=14285&amp;theme=light&amp;colors=hex,b0120a" target="_blank" rel="noopener noreferrer">Reserve a Table</a>
+            <a class="btn btn-primary" href="#order">Order Online</a>
+            <a class="btn btn-light" href="#reservations">Book a Table</a>
+          </div>
+          <dl class="hero-details" aria-label="Restaurant quick details">
+            <div><dt>Location</dt><dd>2 Memorial Ave, St Ives</dd></div>
+            <div><dt>Special</dt><dd>$5 Taco Tuesday</dd></div>
+            <div><dt>Vibe</dt><dd>Family friendly restaurant & bar</dd></div>
+          </dl>
+        </div>
+        <div class="hero-ticket" aria-label="Featured weekly specials">
+          <span>Tonight at CR</span>
+          <strong>Happy Hour · Taco Tuesday · Burger Night</strong>
+          <a href="#specials">View specials</a>
+        </div>
+      </section>
+
+      <section class="quick-actions" aria-label="Primary actions">
+        <a href="#order"><span>01</span> Online Ordering</a>
+        <a href="#reservations"><span>02</span> Table Reservations</a>
+        <a href="#specials"><span>03</span> Weekly Specials</a>
+        <a href="#contact"><span>04</span> Contact & Inquiry</a>
+      </section>
+
+      <section class="section order-section" id="order" aria-labelledby="order-title">
+        <div class="section-heading">
+          <p class="eyebrow">Online ordering</p>
+          <h2 id="order-title">Take California Republic home.</h2>
+          <p>
+            A clear online-ordering area for takeaway favourites. Connect these cards to your POS,
+            payment provider, Uber Eats, DoorDash, or in-house ordering system when ready.
+          </p>
+        </div>
+        <div class="order-grid">
+          <article class="order-card taco-card">
+            <p>Tacos</p>
+            <h3>Chicken, beef, pork, vegetarian & Baja California</h3>
+            <a class="text-link" href="#contact">Start order →</a>
+          </article>
+          <article class="order-card burger-card">
+            <p>Burgers</p>
+            <h3>Loaded American-style burgers served with fries</h3>
+            <a class="text-link" href="#contact">Start order →</a>
+          </article>
+          <article class="order-card ribs-card">
+            <p>Grill</p>
+            <h3>Steaks, ribs, fajitas, wings and share plates</h3>
+            <a class="text-link" href="#contact">Start order →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reservations" id="reservations" aria-labelledby="reservations-title">
+        <div class="reservation-content">
+          <p class="eyebrow">Table reservations</p>
+          <h2 id="reservations-title">Book dinner, drinks, birthdays or family nights.</h2>
+          <p>
+            Guests can request a table, add dietary notes, and ask for seating preferences.
+            This form is ready to connect to SevenRooms, ResDiary, OpenTable, email, or your CRM.
+          </p>
+        </div>
+        <form class="booking-form">
+          <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
+          <label>Phone<input type="tel" name="phone" placeholder="0400 000 000" required /></label>
+          <label>Date<input type="date" name="date" required /></label>
+          <label>Time<input type="time" name="time" required /></label>
+          <label>Guests<select name="guests"><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8+ guests</option></select></label>
+          <label>Notes<textarea name="notes" placeholder="High chair, birthday, allergies, booth preference"></textarea></label>
+          <button class="btn btn-primary" type="submit">Request Reservation</button>
+        </form>
+      </section>
+
+      <section class="section specials" id="specials" aria-labelledby="specials-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Happy Hour · Taco Tuesday · Burger Night</p>
+          <h2 id="specials-title">Weekly reasons to come back.</h2>
+        </div>
+        <div class="specials-grid">
+          <article class="special-card happy-hour">
+            <span>Happy Hour</span>
+            <h3>Margaritas, cocktails & bar bites</h3>
+            <p>Promote weekday drinks, after-work catchups, and share plates.</p>
+          </article>
+          <article class="special-card taco-tuesday">
+            <span>Taco Tuesday</span>
+            <h3>$5 tacos for the local community</h3>
+            <p>Feature the weekly taco offer with chicken, beef, pork, vegetarian, and Baja options.</p>
+          </article>
+          <article class="special-card burger-night">
+            <span>Burger Night</span>
+            <h3>Juicy burgers, fries & cold drinks</h3>
+            <p>A bold weekly promo for casual dinners, groups, and takeaway.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section kids-menu" id="kids" aria-labelledby="kids-title">
+        <div>
+          <p class="eyebrow">Kids menu</p>
+          <h2 id="kids-title">Family friendly favourites for little republicans.</h2>
+          <p>
+            A dedicated kids area helps parents quickly find simple meals before they reserve or order online.
+          </p>
+        </div>
+        <div class="kids-list">
+          <article><h3>Kids Nachos</h3><p>Corn chips, melted cheese, beef mince or black beans.</p></article>
+          <article><h3>Kids Fish & Chips</h3><p>Crispy fish with fries and a simple side.</p></article>
+          <article><h3>Chicken Nuggets</h3><p>Golden nuggets served with fries.</p></article>
+          <article><h3>Kids Burrito or Bowl</h3><p>Rice and cheese with chicken or pulled beef.</p></article>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">A visual taste of the Republic.</h2>
+          <p>
+            The gallery uses styled placeholders now. Replace them with your real food, cocktail, interior,
+            logo, and team photos when you send the assets.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item food"><figcaption>Sizzling fajitas</figcaption></figure>
+          <figure class="gallery-item drink"><figcaption>Signature margaritas</figcaption></figure>
+          <figure class="gallery-item burger"><figcaption>Burger night</figcaption></figure>
+          <figure class="gallery-item family"><figcaption>Family dinners</figcaption></figure>
+          <figure class="gallery-item tacos"><figcaption>Taco Tuesday</figcaption></figure>
+          <figure class="gallery-item venue"><figcaption>St Ives venue</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Ready for real photos, menus and booking links.</h2>
+          <p>
+            Send the logo, restaurant photos, menu PDFs, opening hours, phone number, reservation link,
+            online-ordering link, gift-card provider, and app requirements. This homepage is structured
+            so those assets can be dropped in quickly.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@californiarepublic.com.au">Email California Republic</a>
+            <a class="btn btn-light" href="tel:+61000000000">Call the restaurant</a>
           </div>
         </div>
-        <div class="hero-photo-card">
-          <img src="./assets/photos/hero-tacos-drinks.jpg" alt="California Republic tacos and drinks" />
-        </div>
-      </section>
-
-      <section class="content-section split-section" id="about">
-        <div>
-          <p class="eyebrow">About Us</p>
-          <h2>Fresh, relaxed and full of flavour.</h2>
-        </div>
-        <div>
-          <p>Located in the heart of St Ives, California Republic brings together bold Mexican flavours, American grill favourites and a relaxed local dining atmosphere.</p>
-          <p>Join us for family dinners, casual catch-ups, takeaway nights, cocktails, mocktails and generous plates made for sharing.</p>
-        </div>
-      </section>
-
-      <section class="content-section" id="whats-on">
-        <p class="eyebrow">What's On</p>
-        <h2>Weekly favourites</h2>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span>🌮</span>
-            <h3>Taco Tuesday</h3>
-            <p>Bring the crew for tacos, drinks and a lively St Ives night out.</p>
-          </article>
-          <article class="feature-card">
-            <span>🍔</span>
-            <h3>Burger Night</h3>
-            <p>American grill comfort with bold California Republic flavour.</p>
-          </article>
-          <article class="feature-card">
-            <span>🍹</span>
-            <h3>Happy Hour</h3>
-            <p>Cocktails, mocktails and easy afternoon catch-ups.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section menu-links" id="menus">
-        <p class="eyebrow">Menus</p>
-        <h2>Food, drinks and takeaway</h2>
-        <p>Browse the menus, order online, or reserve a table for your next visit.</p>
-        <div class="hero-actions">
-          <a class="button button-red" href="./food-menu.html">All Day Menu</a>
-          <a class="button button-outline" href="./drinks-menu.html">Drink Menu</a>
-          <a class="button button-red" href="https://californiarepublic-stives.square.site/" target="_blank" rel="noopener noreferrer">Order Now</a>
-        </div>
-      </section>
-
-      <section class="content-section booking-section" id="bookings">
-        <p class="eyebrow">Reservations</p>
-        <h2>Book your table at California Republic St Ives.</h2>
-        <a class="button button-red" href="https://bookings.nowbookit.com/?accountid=b398aed7-99eb-44ce-8aa6-cd6c6837fcff&amp;venueid=14285&amp;theme=light&amp;colors=hex,b0120a" target="_blank" rel="noopener noreferrer">Book Now</a>
+        <address class="address-card">
+          <strong>California Republic St Ives</strong>
+          <span>2 Memorial Ave, St Ives NSW</span>
+          <span>Restaurant · Bar · Takeaway · Family dining</span>
+          <span>Online orders and reservations coming soon</span>
+        </address>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <img src="./assets/california-republic-logo.svg" alt="California Republic" />
-      <p>©2022 by California Republic</p>
-      <p>✉ hellocalistives@gmail.com</p>
-      <p>☎ 02 9411 3424</p>
-      <p>Phone: 02 9411 3424</p>
-      <p>Email: hellocalistives@gmail.com</p>
+    <footer class="footer">
+      <p>© 2026 California Republic. Mexican flavours, American grill and margaritas in St Ives.</p>
+      <a href="#top">Back to top ↑</a>
     </footer>
 
     <script type="module" src="./src/main.js"></script>
