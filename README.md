@@ -10,7 +10,7 @@ A premium, mobile-friendly GitHub Pages website for **California Republic St Ive
 
 ## Key features
 
-- Original uploaded California Republic logo image embedded directly as JPEG data URIs in the header, hero, footer and favicon so no generated/vector logo is used
+- Original uploaded California Republic logo image embedded directly as JPEG data URIs in the header navigation and favicon only, so no generated/vector logo is used and the logo never appears as a hero image, page image or background
 - Navigation links for Home, Food Menu, Drinks Menu, Order Online, Reserve, Specials, Kids and Contact
 - Square Online ordering links open in a new tab
 - Now Book It reservation links open in a new tab
@@ -33,6 +33,16 @@ You can also use:
 ```bash
 npm start
 ```
+
+## Updating menus next time
+
+The site is static, so menu updates are quick:
+
+1. Edit the item names, descriptions and prices directly in `food-menu.html` or `drinks-menu.html`.
+2. Keep each menu category inside the existing `menu-category` cards so the layout stays clean on mobile.
+3. Replace food or drink photos by uploading the new image to `assets/photos/`, then updating the matching `<img src="./assets/photos/...">` path in the page.
+4. Do not add the California Republic logo to page sections, cards, footers or backgrounds; keep it in the top-left navigation only.
+5. Run `npm run check` after edits, then preview with `npm run preview`.
 
 ## Deploy to GitHub Pages
 
