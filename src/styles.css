@@ -381,7 +381,7 @@ textarea { min-height: 120px; resize: vertical; }
 }
 
 .specials-section .section-kicker p { color: rgba(255, 255, 255, 0.72); }
-.specials-grid { max-width: 1240px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0 auto; }
+.specials-grid { max-width: 1240px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 auto; }
 
 .special-card {
   min-height: 300px;
@@ -898,3 +898,46 @@ textarea { min-height: 120px; resize: vertical; }
 
 .gallery-card::before { display: none; }
 .gallery-card figcaption { z-index: 1; }
+
+.special-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.special-card > img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease, filter 420ms ease;
+}
+
+.special-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(23, 21, 20, 0.04), rgba(23, 21, 20, 0.9)),
+    radial-gradient(circle at 20% 18%, rgba(246, 179, 84, 0.32), transparent 30%);
+}
+
+.special-card:hover > img {
+  transform: scale(1.06);
+  filter: saturate(1.16) contrast(1.04);
+}
+
+.special-card h3 { margin-top: 0; }
+
+.special-card span,
+.special-card h3,
+.special-card p {
+  position: relative;
+  z-index: 1;
+}
