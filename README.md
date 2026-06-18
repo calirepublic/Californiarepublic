@@ -17,6 +17,13 @@ A premium, mobile-friendly GitHub Pages website for **California Republic St Ive
 - Menu-led premium restaurant design with warm California red, charcoal, warm white and beige accents
 - Image-led gallery and feature cards based on the supplied food, drink and venue photography themes
 - Mobile-first layouts suitable for iPhone preview
+- Inquiry modal connected to FormSubmit so GitHub Pages can send customer inquiries without a custom backend
+
+## Inquiry form email setup
+
+The “Email the Team” and “Make an inquiry” buttons open the on-page inquiry form. The form posts to FormSubmit at `https://formsubmit.co/ajax/hellocalirepublic@gmail.com`, which forwards submissions to `hellocalirepublic@gmail.com`.
+
+FormSubmit requires a one-time activation: after the first real inquiry submission from the live site, open the confirmation email sent to `hellocalirepublic@gmail.com` and click the activation link. Until that confirmation is complete, FormSubmit may hold or reject deliveries. No paid account or API key is required for the current setup.
 
 ## Preview locally
 

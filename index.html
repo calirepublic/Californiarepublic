@@ -92,7 +92,7 @@
           <span>Plan your visit</span>
           <h3>Fresh menus, cold drinks and a warm St Ives welcome.</h3>
           <p>Use the reservation button for confirmed bookings, or contact the team for functions, dietary notes and special requests.</p>
-          <a class="btn btn-light" href="#contact">Make an inquiry</a>
+          <button class="btn btn-light" type="button" data-inquiry-open>Make an inquiry</button>
         </div>
       </section>
 
@@ -161,7 +161,7 @@
           <h2 id="contact-title">Questions, functions or special requests?</h2>
           <p>Use this area for general inquiries, private dining requests, dietary questions, catering conversations and local partnerships.</p>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:hello@californiarepublic.com.au">Email the Team</a>
+            <button class="btn btn-primary" type="button" data-inquiry-open>Email the Team</button>
             <a class="btn btn-light" href="tel:+61000000000">Call Restaurant</a>
           </div>
         </div>
@@ -179,6 +179,41 @@
       <p>© 2026 California Republic St Ives. Mexican flavours, American grill and margaritas.</p>
       <a href="#home">Back to top ↑</a>
     </footer>
+
+
+    <dialog class="inquiry-modal" id="inquiry-modal" aria-labelledby="inquiry-title">
+      <div class="inquiry-panel">
+        <button class="inquiry-close" type="button" data-inquiry-close aria-label="Close inquiry form">×</button>
+        <p class="eyebrow">Send an inquiry</p>
+        <h2 id="inquiry-title">Tell us how we can help.</h2>
+        <p class="inquiry-intro">Functions, dietary questions, catering conversations and special requests go straight to the California Republic team.</p>
+        <form class="inquiry-form" id="inquiry-form" action="https://formsubmit.co/ajax/hellocalirepublic@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New California Republic website inquiry" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" name="Full Name" autocomplete="name" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="Phone Number" autocomplete="tel" required />
+            </label>
+          </div>
+          <label>
+            Contact Email
+            <input type="email" name="Contact Email" autocomplete="email" required />
+          </label>
+          <label>
+            Inquiry Message
+            <textarea name="Inquiry Message" required placeholder="Tell us about your function, booking question, catering request or special note."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </dialog>
 
     <script type="module" src="./src/main.js"></script>
   </body>

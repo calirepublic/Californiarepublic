@@ -941,3 +941,107 @@ textarea { min-height: 120px; resize: vertical; }
   position: relative;
   z-index: 1;
 }
+
+/* Inquiry form modal */
+body.modal-open { overflow: hidden; }
+
+button.btn { border: 0; cursor: pointer; }
+
+.inquiry-modal {
+  width: min(680px, calc(100vw - 32px));
+  max-height: calc(100svh - 32px);
+  padding: 0;
+  color: var(--charcoal);
+  background: transparent;
+  border: 0;
+}
+
+.inquiry-modal::backdrop {
+  background: rgba(23, 21, 20, 0.66);
+  backdrop-filter: blur(8px);
+}
+
+.inquiry-panel {
+  position: relative;
+  padding: clamp(26px, 5vw, 44px);
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(246, 179, 84, 0.48), transparent 24%),
+    radial-gradient(circle at 10% 96%, rgba(45, 111, 105, 0.16), transparent 28%),
+    var(--paper);
+  box-shadow: 0 34px 100px rgba(21, 16, 12, 0.42);
+}
+
+.inquiry-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: var(--charcoal);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.inquiry-panel h2 {
+  max-width: 520px;
+  margin-right: 42px;
+  font-size: clamp(3rem, 8vw, 5.4rem);
+}
+
+.inquiry-intro {
+  max-width: 560px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.inquiry-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.inquiry-form .btn {
+  width: fit-content;
+  min-width: 160px;
+  margin-top: 4px;
+}
+
+.form-honey { display: none; }
+
+.form-status {
+  min-height: 24px;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.form-status.is-success { color: var(--teal); }
+.form-status.is-error { color: var(--clay); }
+
+@media (max-width: 680px) {
+  .inquiry-modal {
+    width: calc(100vw - 20px);
+    max-height: calc(100svh - 20px);
+  }
+
+  .inquiry-panel { border-radius: 26px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .inquiry-form .btn { width: 100%; }
+}
