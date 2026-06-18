@@ -5,11 +5,16 @@ const BOOKING_URL = 'https://bookings.nowbookit.com/?accountid=b398aed7-99eb-44c
 const htmlFiles = ['index.html', 'food-menu.html', 'drinks-menu.html'];
 const orderTerms = ['Order', 'Order Online', 'Order Now', 'Takeaway', 'Pickup', 'View Menu & Order'];
 const bookingTerms = ['Reserve', 'Reserve a Table', 'Book Now', 'Booking', 'Reservations'];
+const menuLinks = new Map([
+  ['Food Menu', './assets/food%20menu.pdf'],
+  ['Drinks Menu', './assets/drink%20menu.pdf'],
+]);
 
 const decodeHref = (value) => value.replaceAll('&amp;', '&');
 const stripTags = (value) => value.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 const attrValue = (tag, name) => tag.match(new RegExp(`${name}="([^"]*)"`))?.[1] ?? '';
 const hasTerm = (text, terms) => terms.some((term) => text.toLowerCase().includes(term.toLowerCase()));
+const localPath = (href) => decodeURIComponent(href.slice(2));
 
 const failures = [];
 
@@ -18,7 +23,7 @@ for (const file of htmlFiles) {
 
   for (const img of html.matchAll(/<img\b[^>]*>/g)) {
     const src = attrValue(img[0], 'src');
-    if (src.startsWith('./') && !existsSync(src.slice(2))) {
+    if (src.startsWith('./') && !existsSync(localPath(src))) {
       failures.push(`${file}: missing image ${src}`);
     }
   }
@@ -34,6 +39,22 @@ for (const file of htmlFiles) {
       if (target !== '_blank') failures.push(`${file}: order link "${text}" does not open in a new tab`);
     }
 
+    if (href.startsWith('./') && !href.includes('#') && !existsSync(localPath(href))) {
+      failures.push(`${file}: local link "${text}" points to missing file ${href}`);
+    }
+
+    for (const [term, expectedHref] of menuLinks) {
+      if (text.includes(term)) {
+        if (href !== expectedHref) failures.push(`${file}: menu link "${text}" points to ${href}`);
+        if (target !== '_blank') failures.push(`${file}: menu link "${text}" does not open in a new tab`);
+      }
+    }
+
+    if (text === 'View Menus') {
+      if (href !== './assets/food%20menu.pdf') failures.push(`${file}: menu link "${text}" points to ${href}`);
+      if (target !== '_blank') failures.push(`${file}: menu link "${text}" does not open in a new tab`);
+    }
+
     if (hasTerm(text, bookingTerms)) {
       if (href !== BOOKING_URL) failures.push(`${file}: booking link "${text}" points to ${href}`);
       if (target !== '_blank') failures.push(`${file}: booking link "${text}" does not open in a new tab`);
@@ -46,4 +67,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('All required order/booking links and local image paths are valid.');
+console.log('All required order, booking, menu PDF, and local asset links are valid.');
