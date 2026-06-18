@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">California Republic logo</title>
+  <desc id="desc">Supplied California Republic geometric bear, red star, and wordmark logo.</desc>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <g fill="none" stroke="#171514" stroke-width="10" stroke-linejoin="round">
+    <rect x="70" y="56" width="1060" height="332"/>
+    <path d="M70 137 252 268 124 388"/>
+    <path d="M350 56 422 388"/>
+    <path d="M510 56 452 250 780 56"/>
+    <path d="M930 56 1128 352 1030 388"/>
+    <path d="M1118 170 1118 388"/>
+    <path d="M70 300 100 388"/>
+    <path d="M190 388 420 215" fill="#171514"/>
+    <path d="M1010 56 1118 56 1070 210" fill="#171514"/>
+  </g>
+  <g fill="#171514" stroke="#ffffff" stroke-width="5" stroke-linejoin="round">
+    <path d="M348 214 432 164 528 174 615 153 796 160 910 183 957 278 944 346 872 356 836 286 704 280 701 356 650 356 668 285 540 280 515 345 458 360 475 286 399 281 337 260 315 239z"/>
+    <path d="M407 286 455 318 428 364 393 344 390 309z"/>
+    <path d="M520 282 592 315 565 355 512 355z"/>
+    <path d="M704 282 780 318 750 357 700 355z"/>
+    <path d="M868 287 940 318 910 360 850 357z"/>
+    <path d="M315 239 278 253 250 232 294 190 348 214z"/>
+  </g>
+  <g fill="none" stroke="#7c7a78" stroke-width="4" opacity=".95">
+    <path d="M348 214 432 164 455 280 528 174 540 280 615 153 704 280 796 160 780 318 910 183 872 356"/>
+    <path d="M399 281 455 318 540 280 668 285 780 318 836 286 957 278"/>
+    <path d="M475 286 515 345 592 315 650 356"/>
+  </g>
+  <g fill="#c41f3b">
+    <path d="M238 145 259 190 309 196 272 231 282 280 238 256 194 280 204 231 167 196 217 190z"/>
+  </g>
+  <g fill="#171514" font-family="Arial Black, Montserrat, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="555" font-size="130" font-weight="900" letter-spacing="9">CALIFORNIA</text>
+    <text x="600" y="695" font-size="130" font-weight="900" letter-spacing="18">REPUBLIC</text>
+  </g>
+</svg>
