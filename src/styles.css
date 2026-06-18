@@ -182,6 +182,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .hero-content, .hero-card { position: relative; z-index: 1; }
+.restaurant-hero .hero-art { display: none; }
 
 .hero-content { max-width: 920px; }
 
@@ -387,7 +388,7 @@ textarea { min-height: 120px; resize: vertical; }
 }
 
 .specials-section .section-kicker p { color: rgba(255, 255, 255, 0.72); }
-.specials-grid { max-width: 1240px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 auto; }
+.specials-grid { max-width: 1240px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0 auto; }
 
 .special-card {
   min-height: 300px;
@@ -547,6 +548,7 @@ textarea { min-height: 120px; resize: vertical; }
   .site-header { padding: 12px 16px; }
   .brand-logo-crop { width: clamp(84px, 22vw, 104px); }
   .hero { min-height: auto; padding: 62px 16px 34px; }
+  .hero-card { display: none; }
   h1 { font-size: clamp(4.5rem, 22vw, 7.4rem); }
   h2 { font-size: clamp(3.1rem, 16vw, 5.2rem); }
   .hero-actions .btn, .contact-actions .btn, .section-kicker .btn { width: 100%; }
@@ -740,6 +742,10 @@ textarea { min-height: 120px; resize: vertical; }
   background: #fff;
   color: var(--espresso);
   font-weight: 900;
+}
+
+@media (max-width: 1180px) {
+  .specials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 1040px) {
