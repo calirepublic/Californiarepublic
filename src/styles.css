@@ -482,6 +482,7 @@ textarea { min-height: 120px; resize: vertical; }
   padding: 10px 16px;
   border-radius: 999px;
   color: var(--paper);
+  text-decoration: none;
   background: linear-gradient(135deg, var(--clay), var(--chile));
   box-shadow: 0 16px 34px rgba(176, 18, 10, 0.22);
   font-family: "Bebas Neue", Impact, sans-serif;
