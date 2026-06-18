@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">California Republic logo</title>
-  <desc id="desc">California Republic geometric bear and red star logo.</desc>
-  <rect width="1200" height="760" fill="#fffaf2"/>
+  <desc id="desc">Supplied California Republic geometric bear, red star, and wordmark logo.</desc>
+  <rect width="1200" height="760" fill="#ffffff"/>
   <g fill="none" stroke="#171514" stroke-width="10" stroke-linejoin="round">
     <rect x="70" y="56" width="1060" height="332"/>
     <path d="M70 137 252 268 124 388"/>
@@ -13,7 +13,7 @@
     <path d="M190 388 420 215" fill="#171514"/>
     <path d="M1010 56 1118 56 1070 210" fill="#171514"/>
   </g>
-  <g fill="#171514" stroke="#fffaf2" stroke-width="5" stroke-linejoin="round">
+  <g fill="#171514" stroke="#ffffff" stroke-width="5" stroke-linejoin="round">
     <path d="M348 214 432 164 528 174 615 153 796 160 910 183 957 278 944 346 872 356 836 286 704 280 701 356 650 356 668 285 540 280 515 345 458 360 475 286 399 281 337 260 315 239z"/>
     <path d="M407 286 455 318 428 364 393 344 390 309z"/>
     <path d="M520 282 592 315 565 355 512 355z"/>
@@ -26,7 +26,7 @@
     <path d="M399 281 455 318 540 280 668 285 780 318 836 286 957 278"/>
     <path d="M475 286 515 345 592 315 650 356"/>
   </g>
-  <g fill="#bd1f2d">
+  <g fill="#c41f3b">
     <path d="M238 145 259 190 309 196 272 231 282 280 238 256 194 280 204 231 167 196 217 190z"/>
   </g>
   <g fill="#171514" font-family="Arial Black, Montserrat, Arial, sans-serif" text-anchor="middle">
