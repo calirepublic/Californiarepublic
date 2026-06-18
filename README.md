@@ -11,7 +11,7 @@ A premium, mobile-friendly GitHub Pages website for **California Republic St Ive
 ## Key features
 
 - Original uploaded California Republic logo image embedded directly as JPEG data URIs in the header navigation and favicon only, so no generated/vector logo is used and the logo never appears as a hero image, page image or background
-- Navigation links for Home, Food Menu, Drinks Menu, Order Online, Reserve, Specials, Kids and Contact
+- Navigation links for Home, Order Online, Reserve, Food Menu, Drinks Menu, Specials, Gift Cards, Kids and Contact
 - Square Online ordering links open in a new tab
 - Now Book It reservation links open in a new tab
 - Menu-led premium restaurant design with warm California red, charcoal, warm white and beige accents
