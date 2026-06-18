@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">California Republic restaurant logo</title>
+  <desc id="desc">A geometric black bear walking under a red California star above California Republic lettering.</desc>
+  <rect width="900" height="560" fill="#fffaf2"/>
+  <g transform="translate(50 28)">
+    <rect x="0" y="0" width="800" height="300" fill="#fff" stroke="#171514" stroke-width="6"/>
+    <path d="M5 70 175 192M210 0l58 300M324 0l-70 300M520 0 360 135M660 0l138 276M0 235l22 65M90 300l120-96M565 300l235-238" fill="none" stroke="#171514" stroke-width="5" stroke-linecap="square"/>
+    <path d="M652 0h70l78 250v-250zM88 300h198l-22-116z" fill="#171514"/>
+    <g transform="translate(73 82)">
+      <path d="M55 0 72 39 115 33 83 62 94 104 55 82 16 104 27 62-5 33 38 39z" fill="#c41732"/>
+      <path d="M55 0 55 82M16 104 72 39M94 104 38 39M-5 33 83 62M115 33 27 62" stroke="#fff" stroke-width="2" opacity=".72"/>
+    </g>
+    <g transform="translate(197 92)" fill="#171514" stroke="#777" stroke-width="3" stroke-linejoin="round">
+      <path d="M0 108 58 52 150 40 238 8 410 18 488 63 520 218 486 230 442 97 380 195 260 170 212 128 143 124 62 124z"/>
+      <path d="M62 124 94 40 143 124z"/><path d="M143 124 150 40 212 128z"/><path d="M212 128 238 8 260 170z"/><path d="M260 170 305 128 380 195z"/><path d="M380 195 410 18 442 97z"/><path d="M488 63 442 97 520 218z"/>
+      <path d="M154 125 130 175 84 214 96 248 120 265 122 230 176 205 186 156z"/>
+      <path d="M252 169 238 220 224 270 276 268 290 216 305 181z"/>
+      <path d="M382 194 372 254 344 270 402 268 432 215z"/>
+      <path d="M486 228 468 270 518 270 534 226z"/>
+      <path d="M0 108 30 90 62 124 26 120z"/>
+    </g>
+  </g>
+  <g fill="#171514" font-family="Inter, Arial, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="450" y="430" font-size="92" letter-spacing="8">CALIFORNIA</text>
+    <text x="450" y="525" font-size="84" letter-spacing="18">REPUBLIC</text>
+  </g>
+  <g fill="none" stroke="#171514" stroke-width="3" opacity=".75">
+    <path d="M365 463v-47h24v47c0 18 10 30 29 30 18 0 29-12 29-30v-47h24v47c0 32-20 52-53 52-34 0-53-20-53-52z"/>
+  </g>
+</svg>
