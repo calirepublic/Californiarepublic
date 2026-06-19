@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Map to California Republic St Ives</title>
+  <desc id="desc">A clean static map-style illustration showing California Republic St Ives with a location pin near Memorial Avenue.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9f1df"/>
+      <stop offset="1" stop-color="#e7dcc4"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#4d2115" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="960" height="520" fill="url(#bg)"/>
+  <g opacity=".44" fill="none" stroke="#d0c3a7" stroke-width="18" stroke-linecap="round">
+    <path d="M-50 92 C160 108 294 70 442 104 S730 170 1014 116"/>
+    <path d="M-40 366 C130 316 264 322 416 350 S750 432 1010 350"/>
+    <path d="M126 -60 C150 110 128 218 158 366 S220 512 214 585"/>
+    <path d="M746 -44 C706 114 716 238 756 370 S812 510 790 590"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M84 248 L876 248" stroke="#fff8ea" stroke-width="66"/>
+    <path d="M84 248 L876 248" stroke="#cbbca0" stroke-width="6" stroke-dasharray="18 20" opacity=".9"/>
+    <path d="M514 28 C506 116 508 180 548 248 C592 322 614 390 596 496" stroke="#fff8ea" stroke-width="58"/>
+    <path d="M514 28 C506 116 508 180 548 248 C592 322 614 390 596 496" stroke="#cbbca0" stroke-width="6" stroke-dasharray="18 20" opacity=".9"/>
+    <path d="M248 42 C342 126 408 196 548 248 C660 290 730 360 832 462" stroke="#fff8ea" stroke-width="44"/>
+    <path d="M248 42 C342 126 408 196 548 248 C660 290 730 360 832 462" stroke="#d4c5a9" stroke-width="5" stroke-dasharray="14 18" opacity=".75"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" fill="#6e6256" opacity=".88">
+    <text x="104" y="228" font-size="24">Mona Vale Rd</text>
+    <text x="562" y="224" font-size="22">Memorial Ave</text>
+    <text x="620" y="94" font-size="20">St Ives</text>
+    <text x="636" y="386" font-size="18">Village Green</text>
+  </g>
+  <g opacity=".45" fill="#d8c58e">
+    <rect x="94" y="310" width="168" height="74" rx="16"/>
+    <rect x="668" y="126" width="158" height="76" rx="18"/>
+    <rect x="710" y="302" width="110" height="76" rx="18"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M548 140c-52 0-94 42-94 94 0 72 94 168 94 168s94-96 94-168c0-52-42-94-94-94z" fill="#b0120a"/>
+    <circle cx="548" cy="234" r="36" fill="#fff8ea"/>
+    <circle cx="548" cy="234" r="18" fill="#d8562b"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <rect x="300" y="414" width="496" height="62" rx="31" fill="#fff8ea" opacity=".94"/>
+    <text x="548" y="441" font-size="23" font-weight="900" fill="#171514">California Republic St Ives</text>
+    <text x="548" y="464" font-size="16" font-weight="700" fill="#6e6256">2 Memorial Avenue, St Ives NSW 2075</text>
+  </g>
+</svg>
