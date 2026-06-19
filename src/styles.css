@@ -473,9 +473,56 @@ textarea { min-height: 120px; resize: vertical; }
   background: rgba(255, 250, 242, 0.9);
   box-shadow: var(--shadow);
 }
-.contact-card { display: grid; gap: 14px; font-style: normal; }
+.contact-card { display: grid; gap: 16px; font-style: normal; }
 .contact-card strong { font-family: "Bebas Neue", Impact, sans-serif; font-size: clamp(3.2rem, 6vw, 5.8rem); font-weight: 400; line-height: 0.9; }
 .contact-card p { margin: 0; color: var(--muted); font-weight: 800; }
+.visit-address { font-size: 1.08rem; }
+.visit-services { color: var(--ink) !important; letter-spacing: 0.02em; }
+.opening-hours {
+  display: grid;
+  gap: 8px;
+  margin-top: 4px;
+  padding: 18px;
+  border: 1px solid rgba(176, 18, 10, 0.16);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(249, 184, 58, 0.2), rgba(255, 255, 255, 0.58));
+}
+.opening-hours p {
+  color: var(--chile);
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.opening-hours dl, .opening-hours div { margin: 0; }
+.opening-hours div { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; }
+.opening-hours dt, .opening-hours dd { margin: 0; color: var(--ink); font-weight: 900; }
+.visit-map {
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  margin-top: 6px;
+  border: 1px solid rgba(77, 33, 21, 0.14);
+  border-radius: 28px;
+  background: var(--sand);
+  box-shadow: 0 18px 36px rgba(77, 33, 21, 0.14);
+}
+.visit-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: 0;
+}
+.map-directions {
+  width: fit-content;
+  color: var(--chile);
+  font-weight: 900;
+  text-decoration: none;
+}
+.map-directions:hover, .map-directions:focus-visible { text-decoration: underline; }
 .contact-phone {
   flex: 0 0 100%;
   width: fit-content;
@@ -561,6 +608,11 @@ textarea { min-height: 120px; resize: vertical; }
   .special-card { min-height: 250px; }
   .special-card h3 { margin-top: 72px; }
   .gallery-card { min-height: 210px; }
+  .contact-card { border-radius: 28px; }
+  .opening-hours { padding: 16px; border-radius: 20px; }
+  .opening-hours div { display: grid; gap: 4px; }
+  .visit-map, .visit-map iframe { min-height: 280px; }
+  .visit-map { border-radius: 22px; }
   .hero-art-one { top: 58px; right: -62px; opacity: 0.55; }
   .hero-art-two { right: -96px; bottom: 160px; opacity: 0.42; }
 }
