@@ -554,9 +554,10 @@ textarea { min-height: 120px; resize: vertical; }
   box-shadow: 0 14px 30px rgba(77, 33, 21, 0.12);
   text-decoration: none;
   font-family: "Bebas Neue", Impact, sans-serif;
-  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-size: clamp(1.2rem, 2.1vw, 1.55rem);
   letter-spacing: 0.08em;
   line-height: 1;
+  white-space: nowrap;
   transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease;
 }
 
