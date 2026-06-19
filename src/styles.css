@@ -232,6 +232,33 @@ h3 { margin-bottom: 10px; font-size: 1.35rem; line-height: 1.12; }
   margin: 32px 0;
 }
 
+.contact-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.contact-option {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid rgba(176, 18, 10, 0.14);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 16px 34px rgba(77, 33, 21, 0.08);
+}
+
+.contact-option > span {
+  color: var(--chile);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.contact-option .btn { width: 100%; }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -506,98 +533,17 @@ textarea { min-height: 120px; resize: vertical; }
   margin-top: 6px;
   border: 1px solid rgba(77, 33, 21, 0.14);
   border-radius: 28px;
-  background:
-    radial-gradient(circle at 50% 45%, rgba(176, 18, 10, 0.12) 0 80px, transparent 82px),
-    linear-gradient(135deg, rgba(249, 184, 58, 0.26), rgba(255, 250, 242, 0.92));
+  background: rgba(255, 250, 242, 0.92);
   box-shadow: 0 18px 36px rgba(77, 33, 21, 0.14);
 }
-.visit-map::before {
-  position: absolute;
-  inset: 18px;
-  border: 1px solid rgba(77, 33, 21, 0.08);
-  border-radius: 22px;
-  background-image:
-    linear-gradient(rgba(77, 33, 21, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(77, 33, 21, 0.05) 1px, transparent 1px);
-  background-size: 48px 48px;
-  content: "";
-}
-.map-road {
-  position: absolute;
+
+.visit-map iframe {
   display: block;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: inset 0 0 0 1px rgba(77, 33, 21, 0.08);
+  width: 100%;
+  min-height: 380px;
+  border: 0;
 }
-.map-road-main {
-  top: 44%;
-  left: -8%;
-  width: 116%;
-  height: 36px;
-  transform: rotate(-11deg);
-}
-.map-road-cross {
-  top: -10%;
-  left: 48%;
-  width: 34px;
-  height: 120%;
-  transform: rotate(17deg);
-}
-.map-road-avenue {
-  top: 60%;
-  left: 8%;
-  width: 86%;
-  height: 24px;
-  transform: rotate(22deg);
-  background: rgba(255, 255, 255, 0.68);
-}
-.map-block {
-  position: absolute;
-  display: block;
-  border-radius: 18px;
-  background: rgba(77, 33, 21, 0.08);
-}
-.map-block-one { top: 20%; left: 14%; width: 30%; height: 20%; }
-.map-block-two { right: 12%; bottom: 18%; width: 28%; height: 24%; }
-.map-block-three { right: 16%; top: 18%; width: 20%; height: 16%; }
-.map-pin {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  width: 42px;
-  height: 42px;
-  border: 4px solid var(--paper);
-  border-radius: 50% 50% 50% 0;
-  background: linear-gradient(135deg, var(--clay), var(--chile));
-  box-shadow: 0 18px 34px rgba(176, 18, 10, 0.28);
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-.map-pin::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--paper);
-  content: "";
-  transform: translate(-50%, -50%);
-}
-.map-label {
-  position: absolute;
-  top: calc(43% + 36px);
-  left: 50%;
-  padding: 10px 14px;
-  border-radius: 999px;
-  color: var(--paper);
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  text-align: center;
-  background: rgba(77, 33, 21, 0.9);
-  box-shadow: 0 16px 32px rgba(77, 33, 21, 0.18);
-  transform: translateX(-50%);
-  white-space: nowrap;
-}
+
 .map-directions {
   width: fit-content;
   color: var(--chile);
@@ -606,20 +552,16 @@ textarea { min-height: 120px; resize: vertical; }
 }
 .map-directions:hover, .map-directions:focus-visible { text-decoration: underline; }
 .contact-phone {
-  flex: 0 0 100%;
   width: fit-content;
-  margin: -18px 0 0;
-  padding: 10px 16px;
-  border-radius: 999px;
-  color: var(--paper);
+  color: var(--ink);
   text-decoration: none;
-  background: linear-gradient(135deg, var(--clay), var(--chile));
-  box-shadow: 0 16px 34px rgba(176, 18, 10, 0.22);
   font-family: "Bebas Neue", Impact, sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2.35rem, 4vw, 3.5rem);
   letter-spacing: 0.06em;
   line-height: 1;
 }
+
+.contact-phone:hover, .contact-phone:focus-visible { color: var(--chile); }
 
 .footer {
   display: flex;
@@ -681,6 +623,7 @@ textarea { min-height: 120px; resize: vertical; }
   h1 { font-size: clamp(4.5rem, 22vw, 7.4rem); }
   h2 { font-size: clamp(3.1rem, 16vw, 5.2rem); }
   .hero-actions .btn, .contact-actions .btn, .section-kicker .btn { width: 100%; }
+  .contact-actions { grid-template-columns: 1fr; }
   .hero-meta { display: grid; }
   .action-strip, .order-grid, .specials-grid, .family-grid, .gallery-grid { grid-template-columns: 1fr; }
   .reserve-copy .btn, .booking-card .btn { width: 100%; }
