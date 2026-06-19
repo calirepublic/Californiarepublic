@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1418 1708" role="img" aria-labelledby="title desc">
   <title id="title">Map to California Republic St Ives</title>
-  <desc id="desc">Static map image showing California Republic St Ives near St Ives Shopping Village, Green Parade, Denley Lane and Rosedale Road.</desc>
+  <desc id="desc">Static map image showing California Republic St Ives beside Memorial Avenue, near St Ives Village Green, St Ives Playground and St Ives Shopping Village.</desc>
   <defs>
     <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
       <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#3c4651" flood-opacity="0.24"/>
@@ -10,39 +10,40 @@
     </style>
   </defs>
   <rect class="land" width="1418" height="1708"/>
-  <path class="park" d="M0 0h930l-38 184-26 6-188-2-248-62-245-52-174 72L0 217z"/>
-  <path class="path" d="M50 432 68 210 188 72M188 72l145 18 256 82 96 30 154 44 389 60"/>
+  <path class="park" d="M0 0h878l-16 184-44 45-72 432-215 14-394-96 19-366 54-174z"/>
+  <path class="path" d="M42 817 42 656 70 576 150 535 150 405 165 305 122 112M155 532l238 28 287 105 160 13 140-69 145-126 132-11M406 823l14-163 166-56"/>
   <path class="shop" d="M0 520h520l-83 438H0z"/>
   <path class="building" d="M91 602h282v168H91zM444 666h258v246H444zM870 704h235v116H870zM827 873h262v125H827zM1166 1260h204v218h-204z"/>
   <path class="building" d="M610 246h192l-24 138-143-8zM623 216h194v146H623z"/>
-  <path class="minor" d="M-20 451 472 492 811 526 914 530 1048 498 1144 430 1238 424"/>
-  <path class="main" d="M-20 1045 518 1077 782 1055 999 967 1202 963 1350 1017"/>
-  <path class="minor" d="M477 492 467 798 520 901M785 529l4 146-16 186-95 125M1086 494l191-66 77-42M1060 840h242l55-32M1058 498l28 344M1110 963l54-351"/>
-  <path class="main" d="M1254 -60 1220 191 1195 392 1180 640 1168 842"/>
-  <path class="highway" d="M-50 1278 429 1285 638 1295 896 1313 1468 1508" opacity=".5"/>
-  <path class="highway-green" d="M-50 1250 427 1260 640 1267 900 1285 1468 1482"/>
-  <path class="highway" d="M-48 1136 507 1151 740 1119 1410 725" opacity=".5"/>
-  <path class="highway-green" d="M-48 1110 506 1126 735 1092 1410 695"/>
-  <path class="highway" d="M1230 314 1213 472 1200 673 1190 827" opacity=".5"/>
-  <path class="highway-green" d="M1250 310 1234 475 1220 676 1212 825"/>
+  <path class="minor" d="M-30 858 405 907 725 964 960 964 1048 947 1178 924"/>
+  <path class="main" d="M-20 875 383 912 682 990 975 948 1130 840 1250 840"/>
+  <path class="minor" d="M410 912 397 1155 432 1320M760 972l-35 200-54 172M972 949l80-130 118-20M878 1010h230l70-38M1028 945l104 101M1106 840l32-358"/>
+  <path class="main" d="M1198 -70 1165 132 1137 327 1106 590 1082 819"/>
+  <path class="highway" d="M-55 1515 365 1532 532 1515 1010 1335 1470 1115" opacity=".5"/>
+  <path class="highway-green" d="M-55 1485 360 1502 528 1486 995 1308 1470 1088"/>
+  <path class="highway" d="M-48 1372 510 1385 812 1300 1410 914" opacity=".5"/>
+  <path class="highway-green" d="M-48 1346 506 1358 802 1275 1410 884"/>
+  <path class="highway" d="M1108 744 1097 826 1094 948 1108 1088" opacity=".5"/>
+  <path class="highway-green" d="M1128 744 1118 828 1116 950 1130 1088"/>
   <path class="minor" d="M1022 1565 1032 1278 1054 1108 1095 958"/>
   <path class="minor" d="M1030 1407 1290 1428 1460 1444"/>
-  <text class="label large" x="0" y="418" transform="rotate(8 0 418)">Green Parade</text>
-  <text class="label large" fill="#2378d8" x="25" y="775">St Ives Shopping Village</text>
-  <text class="label large" x="265" y="1086" transform="rotate(-2 265 1086)">Denley Ln</text>
-  <text class="label large" x="1088" y="1230" transform="rotate(-83 1088 1230)">Rosedale Rd</text>
-  <text class="label large" x="720" y="1466" transform="rotate(7 720 1466)">Porters Ln</text>
-  <text class="label medium" fill="#188159" x="245" y="185">St Ives Playground</text>
-  <g class="poi" transform="translate(155 132)"><path fill="#fff" d="M0 0c-31 0-56 25-56 56 0 45 56 91 56 91s56-46 56-91C56 25 31 0 0 0z"/><circle r="36" cx="0" cy="55" fill="#17a66f"/><path fill="#fff" d="M-8 76h16V55h17L0 18-25 55h17z"/></g>
-  <g class="poi" transform="translate(348 560)"><path fill="#fff" d="M0 0c-31 0-56 25-56 56 0 45 56 91 56 91s56-46 56-91C56 25 31 0 0 0z"/><circle r="36" cx="0" cy="55" fill="#ef476f"/><path fill="none" stroke="#fff" stroke-width="8" d="M-18 62h36V43L0 28l-18 15zM-8 62V47h16v15"/></g>
+  <text class="label large" x="-40" y="835" transform="rotate(8 -40 835)">Green Parade</text>
+  <text class="label large" fill="#2378d8" x="26" y="1064">St Ives Shopping Village</text>
+  <text class="label large" x="890" y="1636" transform="rotate(8 890 1636)">Porters Ln</text>
+  <text class="label large" x="1122" y="1558" transform="rotate(-83 1122 1558)">Rosedale Rd</text>
+  <text class="label large" x="1144" y="462" transform="rotate(-83 1144 462)">Memorial Ave</text>
+  <text class="label medium" fill="#188159" x="308" y="228">St Ives Village Green</text>
+  <text class="label medium" fill="#188159" x="220" y="640">St Ives Playground</text>
+  <g class="poi" transform="translate(255 170)"><path fill="#fff" d="M0 0c-31 0-56 25-56 56 0 45 56 91 56 91s56-46 56-91C56 25 31 0 0 0z"/><circle r="36" cx="0" cy="55" fill="#17a66f"/><path fill="#fff" d="M-8 76h16V55h17L0 18-25 55h17z"/></g>
+  <g class="poi" transform="translate(165 565)"><path fill="#fff" d="M0 0c-31 0-56 25-56 56 0 45 56 91 56 91s56-46 56-91C56 25 31 0 0 0z"/><circle r="36" cx="0" cy="55" fill="#ef476f"/><path fill="none" stroke="#fff" stroke-width="8" d="M-18 62h36V43L0 28l-18 15zM-8 62V47h16v15"/></g>
   <g class="poi" transform="translate(1045 943)"><circle r="42" fill="#ff861f"/><text x="0" y="14" font-size="43" font-family="Arial" text-anchor="middle" fill="#fff">🍴</text></g>
   <g class="poi" transform="translate(1235 1300)"><circle r="42" fill="#ff861f"/><text x="0" y="14" font-size="43" font-family="Arial" text-anchor="middle" fill="#fff">🍴</text></g>
   <g class="poi" transform="translate(371 894)"><circle r="43" fill="#6572d5"/><text x="0" y="15" font-size="58" font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">$</text></g>
-  <g class="poi" transform="translate(1038 665)">
+  <g class="poi" transform="translate(908 1025)">
     <path fill="#e23130" d="M0-38c-44 0-80 36-80 80 0 64 80 145 80 145s80-81 80-145c0-44-36-80-80-80z"/>
     <circle cx="0" cy="43" r="31" fill="#b60017"/>
   </g>
-  <text font-family="Arial,Helvetica,sans-serif" font-size="52" fill="#be1e2d" x="1090" y="660">California</text>
-  <text font-family="Arial,Helvetica,sans-serif" font-size="52" fill="#be1e2d" x="1098" y="722">St Ives</text>
-  <text font-family="Arial,Helvetica,sans-serif" font-size="36" fill="#be1e2d" x="1100" y="774">Brunch</text>
+  <text font-family="Arial,Helvetica,sans-serif" font-size="52" fill="#be1e2d" x="962" y="995">California Republic</text>
+  <text font-family="Arial,Helvetica,sans-serif" font-size="52" fill="#be1e2d" x="962" y="1056">St Ives</text>
+  <text font-family="Arial,Helvetica,sans-serif" font-size="36" fill="#be1e2d" x="962" y="1108">Brunch</text>
 </svg>
