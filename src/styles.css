@@ -991,6 +991,12 @@ textarea { min-height: 120px; resize: vertical; }
     radial-gradient(circle at 20% 18%, rgba(246, 179, 84, 0.22), transparent 28%);
 }
 
+.menu-showcase-card.grill-theme::after {
+  background:
+    linear-gradient(180deg, rgba(23, 21, 20, 0.02), rgba(23, 21, 20, 0.64)),
+    radial-gradient(circle at 20% 18%, rgba(246, 179, 84, 0.14), transparent 28%);
+}
+
 .feature-card:hover > img,
 .menu-showcase-card:hover > img,
 .drink-card:hover > img,
