@@ -476,8 +476,8 @@ textarea { min-height: 120px; resize: vertical; }
   font-weight: 900;
   text-transform: uppercase;
 }
-.tacos, .burgers { grid-column: span 2; grid-row: span 2; }
-.ribs, .mocktails, .kids-meals, .vibe { grid-column: span 2; }
+.brekkie-burrito, .burger-beer { grid-column: span 2; grid-row: span 2; }
+.burrito-drink, .fish-chips, .scotch, .skewer, .shared-plates, .beef-ribs { grid-column: span 2; }
 .tacos { --gallery-bg: radial-gradient(circle at 42% 28%, #ffd65c 0 18%, #d8562b 19% 30%, #fff2ce 31% 42%, #4d2115 43% 100%); }
 .burgers { --gallery-bg: linear-gradient(135deg, #f9b83a, #8b321f 48%, #21110b); }
 .ribs { --gallery-bg: linear-gradient(135deg, #42180f, #d8562b 52%, #21110b); }
