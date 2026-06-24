@@ -425,6 +425,17 @@ textarea { min-height: 120px; resize: vertical; }
 .special-card h3 { margin-top: 102px; font-size: 2rem; }
 .special-card p { margin-bottom: 0; color: rgba(255, 255, 255, 0.78); line-height: 1.6; }
 
+.specials-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  max-width: 1240px;
+  margin: 30px auto 0;
+}
+
+.specials-actions .btn { min-width: 170px; }
+
 .kids-panel {
   min-height: 100%;
   padding: clamp(28px, 5vw, 52px);
