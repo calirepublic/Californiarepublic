@@ -655,6 +655,7 @@ textarea { min-height: 120px; resize: vertical; }
   .hero-actions .btn, .contact-actions .btn, .section-kicker .btn { width: 100%; }
   .contact-actions { grid-template-columns: 1fr; }
   .menu-actions { grid-template-columns: 1fr; }
+  .menu-actions .lunch-special-button { grid-column: auto; }
   .hero-meta { display: grid; }
   .action-strip, .order-grid, .specials-grid, .family-grid, .gallery-grid { grid-template-columns: 1fr; }
   .reserve-copy .btn, .booking-card .btn { width: 100%; }
@@ -781,6 +782,10 @@ textarea { min-height: 120px; resize: vertical; }
 .menu-actions .btn {
   width: 100%;
   min-width: 0;
+}
+
+.menu-actions .lunch-special-button {
+  grid-column: 1 / -1;
 }
 
 .drinks-preview {
