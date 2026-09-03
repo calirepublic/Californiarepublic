@@ -43,7 +43,14 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://californiarepublic-stives.square.site/" target="_blank" rel="noopener noreferrer">Order Online</a>
             <a class="btn btn-light" href="https://bookings.nowbookit.com/?accountid=b398aed7-99eb-44ce-8aa6-cd6c6837fcff&amp;venueid=14285&amp;theme=light&amp;colors=hex,b0120a" target="_blank" rel="noopener noreferrer">Book a Table</a>
-            <a class="btn btn-ghost" href="./assets/food%20menu.pdf" target="_blank" rel="noopener noreferrer">View Menus</a>
+            <details class="hero-menu-picker">
+              <summary class="btn btn-ghost">View Menus</summary>
+              <div class="hero-menu-options" aria-label="Choose a menu">
+                <a href="./assets/food%20menu.pdf" target="_blank" rel="noopener noreferrer">Food Menu</a>
+                <a href="./assets/drink%20menu.pdf" target="_blank" rel="noopener noreferrer">Drinks Menu</a>
+                <a href="./assets/lunch-specials-menu.pdf" target="_blank" rel="noopener noreferrer">Lunch Specials</a>
+              </div>
+            </details>
           </div>
           <div class="hero-meta" aria-label="Restaurant highlights">
             <span>2 Memorial Ave, St Ives</span>
@@ -67,6 +74,7 @@
         <a href="https://bookings.nowbookit.com/?accountid=b398aed7-99eb-44ce-8aa6-cd6c6837fcff&amp;venueid=14285&amp;theme=light&amp;colors=hex,b0120a" target="_blank" rel="noopener noreferrer"><span>02</span>Reserve a Table</a>
         <a href="./assets/food%20menu.pdf" target="_blank" rel="noopener noreferrer"><span>03</span>Food Menu</a>
         <a href="./assets/drink%20menu.pdf" target="_blank" rel="noopener noreferrer"><span>04</span>Drinks Menu</a>
+        <a href="./assets/lunch-specials-menu.pdf" target="_blank" rel="noopener noreferrer"><span>05</span>Lunch Specials</a>
       </section>
 
       <section class="section" id="order" aria-labelledby="order-title">
@@ -117,7 +125,7 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="menus-title">
+      <section class="section" id="menus" aria-labelledby="menus-title">
         <div class="section-kicker centered reveal">
           <p class="eyebrow section-label">Menus</p>
           <h2 id="menus-title">Food and drinks built for cravings.</h2>
