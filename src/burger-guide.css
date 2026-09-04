@@ -1,0 +1,81 @@
+.burger-guide {
+  --cream: #fff0d7;
+  --paper: #fff9ee;
+  --red: #a42313;
+  --orange: #ffad32;
+  --lime: #d5aa63;
+}
+
+.burger-hero {
+  background:
+    linear-gradient(115deg, rgba(24, 10, 5, 0.96), rgba(119, 37, 8, 0.46)),
+    url("../assets/burger-guide/wagyu-burger.jpg") center / cover;
+}
+
+.burger-hero::after {
+  border-color: rgba(255, 173, 50, 0.24);
+  transform: rotate(-8deg);
+}
+
+.burger-stamp { transform: rotate(-7deg); }
+
+.burger-story {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(221, 105, 25, 0.28), transparent 27%),
+    linear-gradient(145deg, #fff7e9, #f5d8aa);
+}
+
+.burger-feature-cards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.burger-feature-cards article {
+  min-height: 190px;
+  padding: 26px;
+  color: #fff;
+  background: linear-gradient(145deg, #3c1b11, #171312);
+  border-radius: 22px;
+  box-shadow: 0 18px 42px rgba(65, 24, 7, 0.14);
+}
+
+.burger-feature-cards article:nth-child(even) { background: linear-gradient(145deg, #c14b1c, #8f1c0e); }
+.burger-feature-cards span { color: var(--orange); font-size: 0.72rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+.burger-feature-cards h3 { margin: 16px 0 8px; font-family: "Bebas Neue", sans-serif; font-size: 2rem; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; }
+.burger-feature-cards p { margin: 0; color: rgba(255, 255, 255, 0.72); line-height: 1.55; }
+
+.chipotle-section {
+  background:
+    radial-gradient(circle at 92% 8%, rgba(180, 55, 15, 0.32), transparent 30%),
+    #171312;
+}
+
+.chipotle-section .chipotle-image {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  max-width: none;
+  align-self: center;
+}
+
+.burger-notes span { border-color: rgba(255, 173, 50, 0.32); background: rgba(255, 255, 255, 0.04); }
+
+.burger-continued {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(224, 101, 23, 0.32), transparent 31%),
+    linear-gradient(135deg, #f1c982, #fff1d6);
+}
+
+.burger-continued::before, .burger-continued::after { color: rgba(164, 35, 19, 0.1); content: "+"; }
+
+@media (max-width: 900px) {
+  .burger-feature-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .burger-hero { background-position: 58% center; }
+  .burger-feature-cards { grid-column: 1; grid-template-columns: 1fr; }
+  .burger-feature-cards article { min-height: auto; }
+  .chipotle-section .chipotle-image { grid-column: 1; grid-row: auto; }
+}

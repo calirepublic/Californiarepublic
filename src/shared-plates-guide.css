@@ -1,0 +1,96 @@
+.shared-guide {
+  --cream: #f9edcc;
+  --paper: #fff9eb;
+  --red: #b4110b;
+  --orange: #f5a235;
+  --lime: #c4b26d;
+  --teal: #0f5f64;
+}
+
+.shared-hero {
+  background:
+    linear-gradient(112deg, rgba(24, 10, 8, 0.96), rgba(115, 14, 8, 0.44)),
+    url("../assets/shared-plates-guide/good-food-good-times.jpg") center / cover;
+}
+
+.shared-hero::after {
+  border-color: rgba(20, 112, 116, 0.3);
+  transform: rotate(10deg);
+}
+
+.shared-stamp { transform: rotate(6deg); }
+.shared-stamp strong { font-size: clamp(2.4rem, 4vw, 4rem); }
+
+.shared-story {
+  grid-template-columns: minmax(260px, 0.6fr) minmax(0, 1.65fr);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(18, 106, 110, 0.2), transparent 28%),
+    linear-gradient(145deg, #fff9ea, #efdba7);
+}
+
+.shared-table-image { align-self: center; }
+
+.sharing-menu {
+  padding: clamp(84px, 11vw, 160px) clamp(22px, 7vw, 110px);
+  color: #fff;
+  background:
+    radial-gradient(circle at 88% 10%, rgba(181, 20, 11, 0.34), transparent 28%),
+    linear-gradient(145deg, #0c4145, #152c2d 52%, #171312);
+}
+
+.sharing-heading {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) 1fr;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: clamp(40px, 7vw, 90px);
+}
+
+.sharing-heading .eyebrow { align-self: start; }
+
+.sharing-groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.sharing-groups article {
+  position: relative;
+  min-height: 430px;
+  padding: clamp(26px, 3vw, 42px);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 26px;
+  backdrop-filter: blur(12px);
+}
+
+.sharing-groups article:nth-child(2) { background: rgba(180, 17, 11, 0.64); }
+.group-number { position: absolute; right: 22px; top: 12px; color: rgba(255, 255, 255, 0.1); font-family: "Bebas Neue", sans-serif; font-size: 9rem; line-height: 1; }
+.group-kicker { position: relative; margin: 0 0 14px; color: var(--orange); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+.sharing-groups h3 { position: relative; max-width: 270px; margin: 0 0 34px; font-family: "Bebas Neue", sans-serif; font-size: 2.45rem; font-weight: 400; line-height: 0.95; text-transform: uppercase; }
+.sharing-groups ul { position: relative; display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.sharing-groups li { padding-bottom: 13px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.92rem; font-weight: 800; }
+.sharing-note { margin: 34px 0 0; color: rgba(255, 255, 255, 0.66); font-weight: 700; text-align: center; }
+
+.shared-continued {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(15, 95, 100, 0.26), transparent 31%),
+    linear-gradient(135deg, #ead392, #fff4d8);
+}
+
+.shared-continued::before, .shared-continued::after { color: rgba(15, 95, 100, 0.1); content: "∞"; }
+
+@media (max-width: 900px) {
+  .sharing-groups { grid-template-columns: 1fr; }
+  .sharing-groups article { min-height: auto; }
+}
+
+@media (max-width: 760px) {
+  .shared-hero { background-position: 55% center; }
+  .shared-hero h1 { font-size: clamp(4.8rem, 22vw, 6.5rem); }
+  .shared-story { grid-template-columns: 1fr; }
+  .sharing-menu { padding: 78px 18px; }
+  .sharing-heading { grid-template-columns: 1fr; gap: 8px; }
+  .sharing-groups h3 { max-width: 230px; }
+}
