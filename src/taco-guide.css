@@ -185,6 +185,16 @@ h2 { font-size: clamp(4.7rem, 10vw, 9rem); line-height: 0.78; }
 
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 26px clamp(20px, 6vw, 80px); color: rgba(255, 255, 255, 0.65); background: var(--ink); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
 
+.guide-faq-link {
+  align-self: center;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.guide-faq-link:hover,
+.guide-faq-link:focus-visible { color: var(--orange); }
+
 .guide-social-links {
   display: flex;
   align-items: center;
