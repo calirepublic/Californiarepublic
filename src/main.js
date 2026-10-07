@@ -88,13 +88,14 @@ inquiryForm?.addEventListener('submit', async (event) => {
       headers: { Accept: 'application/json' },
     });
 
-    if (!response.ok) {
+    const result = await response.json();
+    if (!response.ok || !(result.success === true || result.success === 'true')) {
       throw new Error('Inquiry service rejected the request.');
     }
 
     inquiryForm.reset();
     if (inquiryStatus) {
-      inquiryStatus.textContent = 'Thanks — your inquiry has been sent to the California Republic team.';
+      inquiryStatus.textContent = 'Your inquiry has been accepted for delivery to the California Republic team. Thank you.';
       inquiryStatus.classList.add('is-success');
     }
 
@@ -103,7 +104,7 @@ inquiryForm?.addEventListener('submit', async (event) => {
     }
   } catch (error) {
     if (inquiryStatus) {
-      inquiryStatus.textContent = 'Sorry, something went wrong. Please try again in a moment.';
+      inquiryStatus.textContent = 'We couldn’t confirm your inquiry was sent. Your details are still here. Please email hellocalirepublic@gmail.com or call (02) 9411 3424 instead.';
       inquiryStatus.classList.add('is-error');
     }
 
